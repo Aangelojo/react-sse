@@ -1,0 +1,29 @@
+/* src/App.css */
+.sse-container {
+  max-width: 600px;
+  margin: 50px auto;
+  padding: 20px;
+  border: 1px solid #ddd;
+  border-radius: 8px;
+}
+.progress-bar {
+  height: 20px;
+  background: #f3f4f6;
+  margin: 20px 0;
+  border-radius: 4px;
+  position: relative;
+}
+.progress-bar::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 0%;
+  background: linear-gradient(to right, #6366f1, #4f46e5);
+  transition: width 0.3s;
+}
+.status {
+  font-weight: bold;
+  color: #2d3748;
+}
